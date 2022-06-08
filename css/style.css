@@ -2,8 +2,12 @@ body {
     display: flex;
     justify-content: center;
     min-height: 100vh;
+    flex-direction: column;
 }
 
+h1{
+    align-self: center;
+}
 
 .container{
     margin-top: 7rem;
