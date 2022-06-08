@@ -37,3 +37,15 @@ body {
     color: white;
     background-color: blue;
 }
+
+@media (max-width: 500px){
+    .w_container{
+        width: 90%;
+        height: 400px;
+    }
+
+    .w_block{
+        width: 50%;
+        min-width: 200px;
+    }
+}
