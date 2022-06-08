@@ -1,7 +1,11 @@
 body {
+    background-image: url(../img/Weather-Background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     min-height: 100vh;
+    height: 100%;
     flex-direction: column;
 }
 
@@ -18,14 +22,14 @@ h1{
 }
 
 .w_container{
-    padding-top: 5rem;
+    padding-top: 3rem;
     text-align: center;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     width: 400px;
     height: 400px;
-    background-color: red;
+    background-color: transparent;
     margin: auto;
 }
 
@@ -37,12 +41,41 @@ h1{
     width: 200px;
     height: 200px;
     font-size: 1.5rem;
-    border: solid 2px;
-    color: white;
-    background-color: blue;
+    /* border: solid 2px; */
+    color: rgb(29, 28, 28);
+    opacity: 0.6;
+}
+
+#city-block{
+    background-color: rgb(82, 112, 247);
+}
+
+#tmp-block{
+    background-color: aqua;
+}
+
+#hmd-block{
+    background-color: aquamarine;
+}
+
+#wnd-block{
+    background-color: azure;
 }
 
 @media (max-width: 500px){
+    body{
+        background-image: url(../img/853653.jpg);
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+        background-attachment: fixed;
+        background-color: #fff;
+        -webkit-background-size: calc(100vw) calc(100vh);
+        -moz-background-size: calc(100vw) calc(100vh);
+        -o-background-size: calc(100vw) calc(100vh);
+        background-size: calc(100vw) calc(100vh);
+
+    }
+
     .w_container{
         width: 90%;
         height: 400px;

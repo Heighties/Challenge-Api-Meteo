@@ -16,7 +16,7 @@ const APIKEY = '83a3a64d8c5c44db4351d1b9d6738aaa'
         document.querySelector('#hmd-block').innerHTML =
         "<i class='fas fa-tint'></i>" + data.main.humidity + '%';
         document.querySelector('#wnd-block').innerHTML =
-        "<i class='fas fa-wind'></i>" + data.main.speed + 'km/h';
+        "<i class='fas fa-wind'></i>" + data.main.speed + ' km/h';
     })
     ).catch(err => console.log('Erreur : ' + err));
     }
